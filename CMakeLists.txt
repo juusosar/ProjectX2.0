@@ -22,5 +22,5 @@ enable_fuzz_testing()
 add_fuzz_test(test1 test/test1.cpp)
 
 ## Next, correctly point to the linked source files present in /src folder
-# target_link_libraries(test1 PRIVATE calulator)
+target_link_libraries(test1 PRIVATE calulator)
 ## Note: <name_of_source_function> is the name you'll assign to your source_code in the second CMakelists.txt file present in /src folder
