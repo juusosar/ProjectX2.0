@@ -19,4 +19,7 @@ jobs:
     - name: Build the Docker image
       run: ./build.sh
     - name: Run the docker image and start fuzzing
-      run: ./run.sh
+      run: | 
+        source name.sh
+        docker run --rm ${IMAGE}
+        
