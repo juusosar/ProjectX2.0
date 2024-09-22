@@ -23,7 +23,5 @@ jobs:
         docker --version
         docker images
         docker run --rm cifuzz-docker-image
-        docker ps -a
-        docker info
 
         
