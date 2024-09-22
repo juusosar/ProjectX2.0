@@ -46,4 +46,4 @@ timeout: 10m
 #project: my-project-1a2b3c4d
 
 ## Style for CI Fuzz.
-#style: plain
+style: color
