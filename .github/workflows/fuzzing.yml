@@ -22,5 +22,7 @@ jobs:
       run: |
         docker --version
         docker images
-        docker run -rm cifuzz-docker-image
+        docker run --rm cifuzz-docker-image
+        docker ps -a
+        docker info
         
