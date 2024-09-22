@@ -22,7 +22,6 @@ jobs:
   Fuzz:
 
     runs-on: ubuntu-latest
-    container: cifuzz-docker-image
 
     steps:
     - uses: actions/checkout@v4
