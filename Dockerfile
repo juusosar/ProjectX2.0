@@ -38,5 +38,4 @@ RUN git clone https://github.com/juusosar/ProjectX2.0
 WORKDIR /ProjectX/ProjectX2.0
 RUN ls -a
 
-CMD ["sh", "-c", "cifuzz run test1 --use-sandbox=false"]
-#> /ProjectX/ProjectX2.0/fuzzing.log 2>&1 && cat /ProjectX/ProjectX2.0/fuzzing.log"]
+CMD ["sh", "-c", "cifuzz run test1 --use-sandbox=false > /ProjectX/ProjectX2.0/fuzzing.log 2>&1 && cat /ProjectX/ProjectX2.0/fuzzing.log"]
