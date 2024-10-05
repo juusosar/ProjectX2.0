@@ -16,5 +16,5 @@ FUZZ_TEST(const uint8_t *data, size_t size) {
   float num_2 = fuzzed_data.ConsumeFloatingPoint<float>();
   char op = fuzzed_data.PickValueInArray('+', '-', '*', '/');
 
-  calculator(num_1, char_op, num_2);
+  calculator(num_1, op, num_2);
 }
