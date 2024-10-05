@@ -14,9 +14,7 @@ FUZZ_TEST(const uint8_t *data, size_t size) {
   FuzzedDataProvider fuzzed_data(data, size); 
   float num_1 = fuzzed_data.ConsumeFloatingPoint<float>();
   float num_2 = fuzzed_data.ConsumeFloatingPoint<float>();
-  std::string op = fuzzed_data.ConsumeBytesAsString(1);
-
-  char char_op = op[0];
+  char op = fuzzed_data.PickValueInArray('+', '-', '*', '/');
 
   calculator(num_1, char_op, num_2);
 }
